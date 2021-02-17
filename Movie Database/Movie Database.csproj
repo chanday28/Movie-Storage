@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04296DC0-45DC-4045-BCDD-EA5EDF8DC797}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Movie_Database</RootNamespace>
+    <AssemblyName>Movie Database</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.1.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forum.Designer.cs">
+      <DependentUpon>Forum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForumPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForumPost.Designer.cs">
+      <DependentUpon>ForumPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActorSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActorSearch.Designer.cs">
+      <DependentUpon>ActorSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorSearch.Designer.cs">
+      <DependentUpon>DirectorSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActorSearchResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActorSearchResult.Designer.cs">
+      <DependentUpon>ActorSearchResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorSearchResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorSearchResult.Designer.cs">
+      <DependentUpon>DirectorSearchResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProvideReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvideReview.Designer.cs">
+      <DependentUpon>ProvideReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHome.Designer.cs">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieSearch.Designer.cs">
+      <DependentUpon>MovieSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSearchResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieSearchResult.Designer.cs">
+      <DependentUpon>MovieSearchResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieView.Designer.cs">
+      <DependentUpon>MovieView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActorView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActorView.Designer.cs">
+      <DependentUpon>ActorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorView.Designer.cs">
+      <DependentUpon>DirectorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLConnect.cs" />
+    <Compile Include="variables.cs" />
+    <EmbeddedResource Include="Forum.resx">
+      <DependentUpon>Forum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForumPost.resx">
+      <DependentUpon>ForumPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActorSearch.resx">
+      <DependentUpon>ActorSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorSearch.resx">
+      <DependentUpon>DirectorSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActorSearchResult.resx">
+      <DependentUpon>ActorSearchResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorSearchResult.resx">
+      <DependentUpon>DirectorSearchResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvideReview.resx">
+      <DependentUpon>ProvideReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHome.resx">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieSearch.resx">
+      <DependentUpon>MovieSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieSearchResult.resx">
+      <DependentUpon>MovieSearchResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieView.resx">
+      <DependentUpon>MovieView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActorView.resx">
+      <DependentUpon>ActorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorView.resx">
+      <DependentUpon>DirectorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
